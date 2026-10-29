@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Dragon Ball</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/esfera.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cabecalho">
+        <img src="imagens/esfera.svg" alt="Esfera do Dragão de quatro estrelas" class="esfera">
+        <h1>Clube dos Guerreiros Z</h1>
+        <p class="subtitulo">Cadastre-se e entre para a equipe</p>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="contato.html">Contato</a>
+    </div>
+
+    <div class="conteudo">
+        <div class="secao">
+            <h2>Cadastro</h2>
+
+            <form action="#" method="post">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="personagem">Personagem favorito</label>
+                <select id="personagem" name="personagem">
+                    <option>Goku</option>
+                    <option>Vegeta</option>
+                    <option>Gohan</option>
+                    <option>Piccolo</option>
+                    <option>Outro</option>
+                </select>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <p>Site de fã feito para um projeto escolar de HTML e CSS.</p>
+    </div>
+
+</body>
+</html>

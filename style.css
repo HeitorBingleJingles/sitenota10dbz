@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Arial, sans-serif;
+    color: #1a1a1a;
+    background: linear-gradient(to bottom, #ff9d1c, #1e5fd1);
+    background-attachment: fixed;
+}
+
+.fundo-index {
+    background: #1e5fd1 url("imagens/fundo.jpg") center / cover no-repeat fixed;
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+    background-color: #1b2a5e;
+    border-bottom: 5px solid #ffd000;
+}
+
+.cabecalho h1 {
+    margin: 10px 0 5px 0;
+    font-size: 48px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ffd000;
+    text-shadow: 3px 3px 0 #d62f1f;
+}
+
+.subtitulo {
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.esfera {
+    width: 90px;
+    height: 90px;
+    animation: flutuar 2.5s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: #d62f1f;
+    padding: 12px 10px;
+}
+
+.menu a {
+    padding: 8px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.menu a:hover {
+    background-color: #ffd000;
+    color: #1b2a5e;
+}
+
+.conteudo {
+    flex: 1;
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.secao {
+    background-color: #fff8e6;
+    border: 3px solid #1b2a5e;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+.secao h2 {
+    margin-top: 0;
+    color: #d62f1f;
+    border-bottom: 2px dashed #ff9d1c;
+    padding-bottom: 8px;
+}
+
+.secao p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.secao a {
+    color: #1e5fd1;
+    font-weight: bold;
+}
+
+.secao a:hover {
+    color: #d62f1f;
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    padding-left: 40px;
+}
+
+ol li {
+    padding: 6px 0;
+    font-size: 17px;
+    color: #1b2a5e;
+}
+
+ol li:first-child {
+    font-weight: bold;
+}
+
+ol li:hover {
+    color: #d62f1f;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    flex: 1 1 200px;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 2px solid #ff9d1c;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    margin: 0 0 8px 0;
+    color: #1e5fd1;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+.card:hover {
+    background-color: #ffe9b8;
+}
+
+.tabela {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #1b2a5e;
+    color: #ffd000;
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+tr:nth-child(even) td {
+    background-color: #ffe9b8;
+}
+
+tr:hover td {
+    background-color: #ffd000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+}
+
+label {
+    margin: 12px 0 5px 0;
+    font-weight: bold;
+    color: #1b2a5e;
+}
+
+input, select, textarea {
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #1b2a5e;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #d62f1f;
+    background-color: #fff3d6;
+    box-shadow: 0 0 8px #ff9d1c;
+}
+
+button {
+    align-self: flex-start;
+    margin-top: 18px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #d62f1f;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #1b2a5e;
+}
+
+button:hover {
+    background-color: #ff9d1c;
+    color: #1b2a5e;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+.voltar {
+    text-align: center;
+}
+
+.voltar a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffd000;
+    color: #1b2a5e;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.voltar a:hover {
+    background-color: #ffffff;
+}
+
+.rodape {
+    text-align: center;
+    padding: 15px;
+    background-color: #1b2a5e;
+    color: #ffffff;
+    font-size: 14px;
+    border-top: 5px solid #ffd000;
+}
+
+@media (max-width: 700px) {
+    .cabecalho h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+    }
+
+    .esfera {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu a {
+        padding: 8px 12px;
+    }
+
+    .secao {
+        padding: 15px;
+    }
+
+    .secao p {
+        text-align: left;
+    }
+
+    ol {
+        padding-left: 30px;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+
+    .card {
+        flex-basis: 100%;
+    }
+
+    button {
+        align-self: stretch;
+    }
+}
